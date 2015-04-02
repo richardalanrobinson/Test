@@ -5,3 +5,4 @@ TODO:
 2. Include the tictactoe.js file the tictactoe.html file.
 3. Add id to a cell (td)
 4. Create an onClick event in tictactoe.js that when the cell (with id) is clicked, it will add an "X" to the cell. 
+5. Read the pages marked in the Javascript book.
