@@ -2,7 +2,10 @@ TODO:
 
 2015 April 2. 
 1. Create a tictactoe.js file
-2. Include the tictactoe.js file the tictactoe.html file.
-3. Add id to a cell (td)
-4. Create an onClick event in tictactoe.js that when the cell (with id) is clicked, it will add an "X" to the cell. 
-5. Read the pages marked in the Javascript book.
+2. Include the tictactoe.js file the tictactoe.html file (using script tag).
+2a. Research (using Javascript book) other ways to add javascript to an HTML page. Be prepared for a verbal test.
+3. Add an ID to each cell (td) in the table. Remember IDs must be unique in an html page.
+4. Create an onClick event in each cell. The onClick event should reference a function in your
+  tictactoe.js -- when the cell (with id) is clicked, it will add an "X" to the cell. For now, just an X in cell when clicked 
+  (later on -- another day -- we'll make the function add X in first cell, "O" in the next cell, "X" in the next cell...) 
+5. Read the pages marked in the Javascript book about how Javacript is used in Browsers/html pages
