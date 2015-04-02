@@ -1,1 +1,0 @@
-var slave = "poor man";
