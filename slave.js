@@ -1,0 +1,1 @@
+var slave = "poor man";
