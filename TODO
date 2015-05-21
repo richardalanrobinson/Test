@@ -1,14 +1,17 @@
 TODO:
 
-2015 May 13
-1. Add a clear button (or game restart), which will clear all the cells of Xs and Os
+2015 May 20
+1. When someone wins, let them know.
 
-2. improve the design of the page (CSS and html). 
-	- increase font size of Xs and Os
-	- give it a page title
-	- Add colors?
-	- Add image?
+2. When it's a tie, let them know. 
 
 3. Add a timer (?) that reminds user they have X number of seconds to make a X or O, otherwise they will lose the game.
 
 4. Add ability to add timer or not have a time on the game (for instance, a checkbox that makes the game timed). 
+
+
+5. improve the design of the page (CSS and html). 
+	- increase font size of Xs and Os
+	- give it a page title
+	- Add colors?
+	- Add image?
