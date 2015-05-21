@@ -2,45 +2,50 @@
   <head>
 	<title>Tic Tac Toe Program</title>
   	<script src="tictactoe.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="tictactoe.css">
   </head>
   <body>
-  
+  <h1>Tic Tac Toe</h1> 
+  <form>
   <table border="1">
-    <tr>
-      	<td width="200" id="id1">
-		<p><button onclick="xo('id1');"/></p>
+    <tr align="center">
+      	<td width="200" tdId="tdId1">
+		<p id="pId1"><button onclick="xo('pId1');"/></p>
       	</td>
-      	<td width="200" id="id2">
-		<p><button onclick="xo('id2');"/></p>
+      	<td width="200" tdId="tdId2">
+		<p id="pId2"><button onclick="xo('pId2');"/></p>
       	</td>
-      	<td width="200" id="id3">
-		<p><button onclick="xo('id3');"/></p>
+      	<td width="200" tdId="tdId3">
+		<p id="pId3"><button onclick="xo('pId3');"/></p>
 	</td>
     </tr>
-    <tr>
-      	<td width="200" id="id4">
-		<p><button onclick="xo('id4');"/></p>
+    <tr align="center">
+      	<td width="200" tdId="tdId4">
+		<p id="pId4"><button onclick="xo('pId4');"/></p>
 	</td>
-      	<td width="200" id="id5">
-		<p><button onclick="xo('id5');"/></p>
+      	<td width="200" tdId="tdId5">
+		<p id="pId5"><button onclick="xo('pId5');"/></p>
+
 	</td>
-      	<td width="200" id="id6">
-		<p><button onclick="xo('id6');"/></p>
+      	<td width="200" tdId="tdId6">
+		<p id="pId6"><button onclick="xo('pId6');"/></p>
 	</td>
     </tr>
-    <tr>
-      	<td width="200" id="id7">
-		<p><button onclick="xo('id7');"/></p>
+    <tr align="center">
+      	<td width="200" tdId="tdId7">
+		<p id="pId7"><button onclick="xo('pId7');"/></p>
 	</td>
-      	<td width="200" id="id8">
-		<p><button onclick="xo('id8');"/></p>
+      	<td width="200" tdId="tdId8">
+		<p id="pId8"><button onclick="xo('pId8');"/></p>
 	</td>
-      	<td width="200" id="id9">
-		<p><button onclick="xo('id9');"/></p>
+      	<td width="200" tdId="tdId9">
+		<p id="pId9"><button onclick="xo('pId9');"/></p>
 	</td>
     </tr>
   </table>
     
+  <button onclick="clear();">Play Again</button>
+  </form>
     
   </body>
   

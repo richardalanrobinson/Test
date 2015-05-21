@@ -1,7 +1,7 @@
 function xo(id) {
 	var elementCell = document.getElementById(id);
 	if (strXo == "X") {
-		elementCell.innerHTML = "X";
+		elementCell.innerHTML = strXo;
 		strXo = "O";
 	} else {
 		elementCell.innerHTML = "O";
@@ -12,7 +12,9 @@ function xo(id) {
 
 var strXo = "X";
 
-
+function clear() {
+	 window.location.reload();
+}
 
 
 
