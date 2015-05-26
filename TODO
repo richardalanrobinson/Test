@@ -1,16 +1,18 @@
 TODO:
 
 2015 May 20
-1. When someone wins, let them know.
 
-2. When it's a tie, let them know. 
+1. When it's a tie, let them know. 
+
+2. Let players know who won.
 
 3. Add a timer (?) that reminds user they have X number of seconds to make a X or O, otherwise they will lose the game.
 
 4. Add ability to add timer or not have a time on the game (for instance, a checkbox that makes the game timed). 
 
+5. Add choice of person vs. person OR person vs. computer.
 
-5. improve the design of the page (CSS and html). 
+6. improve the design of the page (CSS and html). 
 	- increase font size of Xs and Os
 	- give it a page title
 	- Add colors?
