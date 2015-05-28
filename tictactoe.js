@@ -1,7 +1,14 @@
 var nextXo = "X";
 
-function fWinner() {
-
+function xo(id) {
+	var elementCell = document.getElementById(id);
+	if (nextXo == "X") {
+		elementCell.innerHTML = nextXo;
+		nextXo = "O";
+	} else {
+		elementCell.innerHTML = "O";
+		nextXo = "X";
+	}
 
 	var p1 = document.getElementById("pId1").innerHTML;
 	var p2 = document.getElementById("pId2").innerHTML;
@@ -12,6 +19,70 @@ function fWinner() {
 	var p7 = document.getElementById("pId7").innerHTML;
 	var p8 = document.getElementById("pId8").innerHTML;
 	var p9 = document.getElementById("pId9").innerHTML;
+
+	var aWinner = fWinner(p1,p2,p3,p4,p5,p6,p7,p8,p9);
+	if (aWinner) {
+		window.alert("You won!");
+		return;
+	}
+
+	var aTie = fTie(p1,p2,p3,p4,p5,p6,p7,p8,p9);
+	if (aTie) {
+		window.alert("It's a tie!");
+		return;
+	}
+
+}
+
+function fWinner(p1,p2,p3,p4,p5,p6,p7,p8,p9) {
+
+	var winner = isThereAWinner(p1,p2,p3,p4,p5,p6,p7,p8,p9);
+	if (winner) {
+		return true;
+	}
+
+	return false;
+}
+
+function fTie(p1,p2,p3,p4,p5,p6,p7,p8,p9) {
+	
+	var xs = 0;
+	if ("X" == p1 ) {
+		xs++;
+        }
+	if ("X" == p2 ) {
+		xs++;
+        }
+	if ("X" == p3 ) {
+		xs++;
+        }
+	if ("X" == p4 ) {
+		xs++;
+        }
+	if ("X" == p5 ) {
+		xs++;
+        }
+	if ("X" == p6 ) {
+		xs++;
+        }
+	if ("X" == p7 ) {
+		xs++;
+        }
+	if ("X" == p8 ) {
+		xs++;
+        }
+	if ("X" == p9) {
+		xs++;
+        }
+
+	if (xs >= 5) {
+		return true;
+	}
+
+	return false;
+}
+
+function isThereAWinner(p1,p2,p3,p4,p5,p6,p7,p8, p9) {
 
 	var r = isRowAWinner(p1,p2,p3,p4,p5,p6,p7,p8,p9);
 	if (r) {
@@ -29,7 +100,10 @@ function fWinner() {
         }
 
 	return false;
+
+
 }
+
 function isDiagonalAWinner(p1,p3,p5,p7,p9) {
 	if ( p1 == p5 && p5 == p9 ) {
 		return true;
@@ -68,24 +142,6 @@ function isColumnAWinner(p1,p2,p3,p4,p5,p6,p7,p8,p9) {
 
 	return false;
 }
-
-function xo(id) {
-	var elementCell = document.getElementById(id);
-	if (nextXo == "X") {
-		elementCell.innerHTML = nextXo;
-		nextXo = "O";
-	} else {
-		elementCell.innerHTML = "O";
-		nextXo = "X";
-	}
-
-	var aWinner = fWinner();
-	if (aWinner) {
-		window.alert("You won!");
-	}
-
-}
-
 
 function clear() {
 	 window.location.reload();

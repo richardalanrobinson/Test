@@ -2,7 +2,7 @@ TODO:
 
 2015 May 20
 
-1. When it's a tie, let them know. 
+1. Improve the tie logic (add "O"s to logic?, don't assume X goes first).
 
 2. Let players know who won.
 
