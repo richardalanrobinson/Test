@@ -22,7 +22,8 @@ function xo(id) {
 
 	var aWinner = fWinner(p1,p2,p3,p4,p5,p6,p7,p8,p9);
 	if (aWinner) {
-		window.alert("You won!");
+		var name = document.getElementById("yourName").value; 
+		window.alert("You won, " + name + "!");
 		return;
 	}
 
