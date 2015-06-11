@@ -2,8 +2,8 @@ TODO:
 
 2015 May 20
 
-1. Improve the tie logic (add "O"s to logic?, don't assume X goes first).
-
+1a. Improve the tie logic (add "O"s to logic?, don't assume X goes first).
+1b. Have computer determine next best choice for O.
 2. a) Give user choice to be O or X.
    b) User chooses who goes first(X or O).
 3. Add a timer (?) that reminds user they have X number of seconds to make a X or O, otherwise they will lose the game.
