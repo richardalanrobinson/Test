@@ -6,6 +6,10 @@ p {
 	font-size: 25px;
 }
 
+#pOpponentName {
+	visibility: hidden;
+}
+
 
 
 
