@@ -2,7 +2,7 @@ TODO:
 
 2015 May 20
 
-1a. When game type is chosen, opponent's name bar pops up.
+1a. ........
 1b. User chooses who goes first(X or O).
 2a. Improve the tie logic (add "O"s to logic?, don't assume X goes first).
 2b. Have computer determine next best choice for O.
