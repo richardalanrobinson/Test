@@ -148,7 +148,14 @@ function clear() {
 	 window.location.reload();
 }
 
-
+function gameType1(select) {
+	var selectedOption = select.options[select.selectedIndex];
+	//alert("Game Type: " + selectedOption.text);
+	if ("Human vs. Human" == selectedOption.text) {
+		var efg = document.getElementById("pOpponentName");
+		efg.style.visibility="visible";
+	}
+}
 
 
 
