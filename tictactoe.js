@@ -23,7 +23,16 @@ function xo(id) {
 	var aWinner = fWinner(p1,p2,p3,p4,p5,p6,p7,p8,p9);
 	if (aWinner) {
 		var name = document.getElementById("yourName").value; 
-		window.alert("You won, " + name + "!");
+		var opponentName = document.getElementById("opponentName").value; 
+		if ( "" == opponentName ) { 
+			opponentName = "Computer";
+		}
+		if ( xoro == "x" ) {
+			window.alert("You won, " + name + "!");
+		} else {
+			window.alert("You won, " + opponentName + "!");
+		}
+			
 		return;
 	}
 
@@ -157,7 +166,11 @@ function gameType1(select) {
 	}
 }
 
+function radioOnchange(radio) {
+	xoro = radio;
+}
 
+var xoro;
 
 
 
