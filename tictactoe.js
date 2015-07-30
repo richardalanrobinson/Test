@@ -23,14 +23,14 @@ function xo(id) {
 	var aWinner = fWinner(p1,p2,p3,p4,p5,p6,p7,p8,p9);
 	if (aWinner) {
 		var name = document.getElementById("yourName").value; 
-		var opponentName = document.getElementById("opponentName").value; 
-		if ( "" == opponentName ) { 
-			opponentName = "Computer";
+		var player2 = document.getElementById("player2").value; 
+		if ( "" == player2 ) { 
+			player2 = "Computer";
 		}
-		if ( xoro == "x" ) {
+		if ( vGoesFirst == "player1" ) {
 			window.alert("You won, " + name + "!");
 		} else {
-			window.alert("You won, " + opponentName + "!");
+			window.alert("You won, " + player2 + "!");
 		}
 			
 		return;
@@ -161,16 +161,25 @@ function gameType1(select) {
 	var selectedOption = select.options[select.selectedIndex];
 	//alert("Game Type: " + selectedOption.text);
 	if ("Human vs. Human" == selectedOption.text) {
-		var efg = document.getElementById("pOpponentName");
+		var efg = document.getElementById("pPlayer2");
 		efg.style.visibility="visible";
+	}
+	if ("Human vs. Computer" == selectedOption.text) {
+		var adf = document.getElementById("pPlayer2");
+		adf.style.visibility="hidden";
 	}
 }
 
-function radioOnchange(radio) {
-	xoro = radio;
+function goesFirst(checked) {
+	if (checked.checked) {
+		vGoesFirst = "player1";
+	}
+	else {
+		vGoesFirst = "player2";
+	}
 }
 
-var xoro;
+var vGoesFirst = "player1";
 
 
 

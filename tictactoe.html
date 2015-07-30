@@ -46,26 +46,20 @@
     
   <button onclick="clear();">Play Again</button>
 
-	<p>
-		Your Name: <input type="text" id="yourName" />
-	</p>
-	
-	<p>
-		<input type="radio" name="xoro" value="X" onchange="radioOnchange('x')" />X
-	<br>
-		<input type="radio" name="xoro" value="O" onchange="radioOnchange('o')" />O		
-	</p>
-
   	<p>
 		Game Type: 
 		<select id="gameType" onchange="gameType1(this)">
 		<option value="H vs. C">Human vs. Computer</option>
-		<option value="C vs. H">Computer vs. Human</option>
 		<option value="H vs. H">Human vs. Human</option>			
 		</select>
 	</p>
-	<p id="pOpponentName">
-		Opponent's Name: <input type="text" id="opponentName"/>
+  	<p>
+	Player 1: <input type="text" id="yourName" />
+	<input type="checkbox" name="goFirst" checked="player1"  onchange="goesFirst(this)">
+	</p>
+	
+	<p id="pPlayer2">
+		Player 2: <input type="text" id="player2"/>
 	</p>
   </form>
 
